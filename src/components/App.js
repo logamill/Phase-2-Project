@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Route, Switch } from 'react-router-dom';
+import NavBar from './NavBar';
 import Home from './Home';
+import All from './All';
 import Tops from './Tops';
 import Bottoms from './Bottoms';
-import ItemForm from './ItemForm';
-import NavBar from './NavBar';
+import Accessories from './Accessories';
 import Favorites from './Favorites';
+import ItemForm from './ItemForm';
+
 
 function App() {
   const [clothes, setClothes] = useState([])
@@ -18,7 +21,7 @@ function App() {
     .then(res => res.json())
     .then(data => setClothes(data))
   }
-  console.log(clothes)
+
   useEffect(() => {
     getFetch()
   },[])
@@ -37,11 +40,17 @@ function App() {
         <Route exact path='/'>
           <Home clothes={clothesToDisplay}/>
         </Route>
+        <Route exact path='/all'>
+          <All clothes={clothesToDisplay}/>
+        </Route>
         <Route exact path='/tops'>
           <Tops clothes={clothesToDisplay} />
         </Route>
         <Route exact path='/bottoms'>
           <Bottoms clothes={clothesToDisplay} />
+        </Route>
+        <Route exact path='/accessories'>
+          <Accessories clothes={clothesToDisplay} />
         </Route>
         <Route exact path='/add'>
           <ItemForm />

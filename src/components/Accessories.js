@@ -1,10 +1,9 @@
 import React from 'react';
 import FlipCard from './FlipCard';
 
-function Tops({ clothes }) {
-
-    const topsToDisplay = clothes.filter((obj) => 
-        obj.category.toLowerCase() === 'tops' ? true : false)
+function Accessories({ clothes }) {
+    const accsToDisplay = clothes.filter((obj) => 
+        obj.category.toLowerCase() === 'accessories & shoes' ? true : false)
 
     return (
         <div>    
@@ -14,9 +13,9 @@ function Tops({ clothes }) {
         }}>
         </div>
         <div className="row h-100">
-        <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Tops</h2>
+            <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Accessories & Shoes</h2>
           <div class="grid">
-            {topsToDisplay.map((card) => (
+            {accsToDisplay.map((card) => (
               <FlipCard key={card.id} card={card} />
             ))}
           </div>
@@ -25,4 +24,4 @@ function Tops({ clothes }) {
     )
 }
 
-export default Tops;
+export default Accessories;

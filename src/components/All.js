@@ -1,9 +1,8 @@
 import React from 'react';
 import FlipCard from './FlipCard';
 
-function Bottoms({ clothes }) {
-    const bottomsToDisplay = clothes.filter((obj) => 
-    obj.category.toLowerCase() === 'bottoms' ? true : false)
+
+function All({ clothes }) {
  
 return (
     <div>    
@@ -11,11 +10,11 @@ return (
         backgroundImage: `url("https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg")`,
         borderRadius: '10px' 
       }}>
-        </div>
-    <div className="row h-100">
-    <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Bottoms</h2>
+          </div>
+    <div className="row h-100" >
+        <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>All</h2>
       <div class="grid">
-        {bottomsToDisplay.map((card) => (
+        {clothes.map((card) => (
           <FlipCard key={card.id} card={card} />
         ))}
       </div>
@@ -23,4 +22,4 @@ return (
   </div>
 )
 }
-export default Bottoms;
+export default All;

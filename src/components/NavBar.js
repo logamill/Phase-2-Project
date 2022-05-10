@@ -17,6 +17,12 @@ function NavBar({ handleSearch }) {
                     Home
             </NavLink>
             <NavLink
+                to='/all'
+                exact
+                activeStyle={ACTIVE}>
+                    All
+            </NavLink>
+            <NavLink
                 to='/tops'
                 exact
                 activeStyle={ACTIVE}>
@@ -27,6 +33,12 @@ function NavBar({ handleSearch }) {
                 exact 
                 activeStyle={ACTIVE}>
                     Bottoms
+            </NavLink>
+            <NavLink
+                to='/accessories'
+                exact 
+                activeStyle={ACTIVE}>
+                    Accessories & Shoes
             </NavLink>
             <NavLink
                 to='/favorites'
