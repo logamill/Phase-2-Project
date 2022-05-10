@@ -1,0 +1,92 @@
+{
+    "clothing": [
+      {
+        "id": 1,
+        "category": "Tops",
+        "name": "Long-sleeve Hooded Sweatshirt",
+        "image": "https://i.pinimg.com/736x/9a/3d/4d/9a3d4df9897f2d425c396e7c54d3c650.jpg",
+        "brand": "Uniqlo",
+        "color": "Black",
+        "price": 20.99,
+        "size": "S",
+        "favorite": false
+      },
+      {
+        "id": 2,
+        "category": "Bottoms",
+        "name": "Basics Pants",
+        "image": "https://cdna.lystit.com/photos/selfridges/48bd1973/issey-miyake-homme-plisse-15-Balloon-Loose-fit-Pleated-Trousers.jpeg",
+        "brand": "Homme Plissé Issey Miyake",
+        "color": "Black",
+        "price": 355.00,
+        "size": "XS",
+        "favorite": false
+      },
+      {
+        "id": 3,
+        "category": "Outerwear",
+        "name": "Summit Series Outer Tape Seam Coaches Jacket",
+        "image": "https://cdn.shopify.com/s/files/1/0866/4890/products/Supreme_TheNorthFace_SummitSeriesOuterTapeSeamCoachesJacket-Black_1024x1024.jpg",
+        "brand": "Supreme x The North Face",
+        "color": "Black",
+        "price": 785.00,
+        "size": "M",
+        "favorite": false
+      },
+      {
+        "id": 4,
+        "category": "Accessories & Shoes",
+        "name": "Michael Ring",
+        "image": "https://tomwood.centracdn.net/client/dynamic/images/4028_e1345de8b3-tomwoodmichaelring-sc_full.jpg",
+        "brand": "Tom Wood",
+        "color": "Silver",
+        "price": 289.00,
+        "size": "7",
+        "favorite": false
+      },
+      {
+        "id": 5,
+        "category": "Tops",
+        "name": "BASIC STÜSSY TEE",
+        "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/1904762_MIDN_1_83516968-af20-4528-a295-6013e20f8aa0_1296x.jpg",
+        "brand": "STÜSSY",
+        "color": "Blue",
+        "price": 40.00,
+        "size": "XL",
+        "favorite": false
+      },
+      {
+        "id": 6,
+        "category": "Bottoms",
+        "name": "Double Knit Track Pants",
+        "image": "https://cdn-images.farfetch-contents.com/17/05/11/04/17051104_34284573_1000.jpg",
+        "brand": "A Bathing Ape",
+        "color": "Gray",
+        "price": 289.00,
+        "size": "L",
+        "favorite": false
+      },
+      {
+        "id": 7,
+        "category": "Accessories & Shoes",
+        "name": "Nike Air Force 1 '07",
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-5QFp5Z.png",
+        "brand": "NIKE",
+        "color": "White",
+        "price": 100.00,
+        "size": "7.5",
+        "favorite": false
+      },
+      {
+        "id": 8,
+        "category": "Outerwear",
+        "name": "100 Year Denim Chore Coat",
+        "image": "https://www.dickies.com/dw/image/v2/AAYI_PRD/on/demandware.static/-/Sites-master-catalog-dickies/default/dwf545adad/images/main/TCG100_NB_FR.jpg",
+        "brand": "Dickies",
+        "color": "Indigo blue",
+        "price": 109.99,
+        "size": "XXL",
+        "favorite": false
+      }
+    ]
+  }
