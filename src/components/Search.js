@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Search() {
+function Search({ handleSearch }) {
     return (
         <div class='topnav'>
             <input className='search'
             type="text"
             placeholder="Search..."
-            onChange={(e) => console.log(e.target.value)}/>
+            onChange={(e) => handleSearch(e.target.value)}/>
              <i className="circular search link icon"></i>
         </div>
     )

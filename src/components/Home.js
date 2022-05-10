@@ -1,28 +1,17 @@
 import React from 'react';
+import FlipCard from './FlipCard';
 
-function Home() {
+
+function Home({ clothes }) {
     return (
         <div className='main'>
-            <h1>Home Page</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-            <h1>Item</h1>
-
+            <div className="home-container">
+                <div class="grid">
+                    {clothes.map((card) => (
+                    <FlipCard key={card.id} card={card} />
+            ))}
+                </div>
+            </div> 
         </div>
     )
 }

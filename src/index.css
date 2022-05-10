@@ -65,3 +65,36 @@ code {
 .main {
   margin-top: 100px; /* Add a top margin to avoid content overlay */
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 12px;
+}
+
+
+.grid :hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.full-card {
+  display: inline;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  border-radius: 15px;
+  margin: 5px;
+  width: 100%;
+}
+
+.card-image {
+  justify-content: center;
+  width: 100%;
+  padding: 25px;
+}
+
+.card-back {
+  display: flex;
+  margin-right: 25px;
+}
+

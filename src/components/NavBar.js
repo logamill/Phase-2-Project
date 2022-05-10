@@ -13,7 +13,7 @@ const linkStyles = {
     color: 'white',
 }
 
-function NavBar() {
+function NavBar({ handleSearch }) {
     return (
         <div className='navbar'>
             <NavLink
@@ -48,7 +48,7 @@ function NavBar() {
                 }}>
                     Add Item
                 </NavLink>
-            <Search />
+            <Search handleSearch={handleSearch}/>
         </div>
     )
 }

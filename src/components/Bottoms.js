@@ -1,21 +1,20 @@
 import React from 'react';
+import FlipCard from './FlipCard';
 
-function Bottoms() {
-    return (
-        <div className='main'>
-            <h1>Bottoms Page</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-            <h1>Bottoms</h1>
-
-        </div>
-    )
+function Bottoms({ clothes }) {
+    const bottomsToDisplay = clothes.filter((obj) => 
+    obj.category.toLowerCase() === 'bottoms' ? true : false)
+ 
+return (
+    <div className="container">
+    <div className="row h-100">
+      <div class="grid">
+        {bottomsToDisplay.map((card) => (
+          <FlipCard key={card.id} card={card} />
+        ))}
+      </div>
+    </div>
+  </div>
+)
 }
 export default Bottoms;
