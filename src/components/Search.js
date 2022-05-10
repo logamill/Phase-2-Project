@@ -2,7 +2,7 @@ import React from 'react';
 
 function Search({ handleSearch }) {
     return (
-        <div class='topnav'>
+        <div class='topnav' style={{ borderRadius: '10px' }}>
             <input className='search'
             type="text"
             placeholder="Search..."

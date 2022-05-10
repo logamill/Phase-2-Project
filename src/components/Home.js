@@ -24,11 +24,11 @@ function Home({ clothes }) {
 
     return (
         <div>
-            <h1 style={{ display: '-ms-flexbox', marginTop: '50px'}}>Not Uniqlo </h1>  
         <div className='main' style={{ 
             backgroundImage: `url("https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg")`,
             borderRadius: '10px' 
           }}>
+            <h1 style={{ display: '-ms-flexbox', marginTop: '50px', color: 'white', fontSize: '90px', }}>Not Uniqlo </h1>  
             <div className="home-container">
                 {/* <img src="https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg" /> */}
                 <h1 style={BANNER_STYLE}> _</h1>
