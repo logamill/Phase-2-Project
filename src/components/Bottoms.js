@@ -6,7 +6,7 @@ function Bottoms({ clothes }) {
     obj.category.toLowerCase() === 'bottoms' ? true : false)
  
 return (
-    <div className="container">
+    <div className="main">
     <div className="row h-100">
       <div class="grid">
         {bottomsToDisplay.map((card) => (

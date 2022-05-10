@@ -42,7 +42,7 @@
         "color": "Silver",
         "price": 289.00,
         "size": "7",
-        "favorite": false
+        "favorite": true
       },
       {
         "id": 5,

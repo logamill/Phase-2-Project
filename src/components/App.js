@@ -7,6 +7,7 @@ import Tops from './Tops';
 import Bottoms from './Bottoms';
 import ItemForm from './ItemForm';
 import NavBar from './NavBar';
+import Favorites from './Favorites';
 
 function App() {
   const [clothes, setClothes] = useState([])
@@ -44,6 +45,9 @@ function App() {
         </Route>
         <Route exact path='/add'>
           <ItemForm />
+        </Route>
+        <Route exact path='/favorites'>
+          <Favorites clothes={clothesToDisplay} />
         </Route>
       </Switch>
     </div>

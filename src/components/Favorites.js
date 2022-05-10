@@ -1,16 +1,15 @@
 import React from 'react';
 import FlipCard from './FlipCard';
 
-function Tops({ clothes }) {
-
-    const topsToDisplay = clothes.filter((obj) => 
-        obj.category.toLowerCase() === 'tops' ? true : false)
+function Favorites({ clothes }) {
+    const favsToDisplay = clothes.filter((obj) => 
+        obj.favorite === true ? true : false)
 
     return (
         <div className="main">
         <div className="row h-100">
           <div class="grid">
-            {topsToDisplay.map((card) => (
+            {favsToDisplay.map((card) => (
               <FlipCard key={card.id} card={card} />
             ))}
           </div>
@@ -19,4 +18,4 @@ function Tops({ clothes }) {
     )
 }
 
-export default Tops;
+export default Favorites;

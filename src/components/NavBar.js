@@ -2,52 +2,44 @@ import React from 'react';
 import { NavLink } from 'react-router-dom'
 import Search from './Search';
 
-
-const linkStyles = { 
-    display: 'inline-block',
-    width: '50px',
-    padding: '12px',
-    margin: '0 6px 6px',
-    background: 'blue',
-    textDecoration: 'none',  
-    color: 'white',
+const ACTIVE = {
+    background: 'grey',
+    borderRadius: '10px'
 }
 
 function NavBar({ handleSearch }) {
     return (
-        <div className='navbar'>
+        <div className='navbar' style={{ position: 'sticky', top: 0 }}>
             <NavLink
                 to='/'
                 exact
-                activeStyle={{
-                    background: 'grey'
-                }}>
+                activeStyle={ACTIVE}>
                     Home
-                </NavLink>
-                <NavLink
+            </NavLink>
+            <NavLink
                 to='/tops'
                 exact
-                activeStyle={{
-                    background: 'grey'
-                }}>
+                activeStyle={ACTIVE}>
                     Tops
-                </NavLink>
+            </NavLink>
             <NavLink
                 to='/bottoms'
                 exact 
-                activeStyle={{
-                    background: 'grey'
-                }}>
+                activeStyle={ACTIVE}>
                     Bottoms
-                </NavLink>
+            </NavLink>
+            <NavLink
+                to='/favorites'
+                exact 
+                activeStyle={ACTIVE}>
+                    Favorites 
+            </NavLink>
             <NavLink
                 to='/add'
                 exact 
-                activeStyle={{
-                    background: 'grey'
-                }}>
+                activeStyle={ACTIVE}>
                     Add Item
-                </NavLink>
+            </NavLink>
             <Search handleSearch={handleSearch}/>
         </div>
     )
