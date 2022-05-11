@@ -37,8 +37,6 @@ code {
   }
 }
 
-<<<<<<< HEAD
-=======
 /* The navigation bar */
 .navbar {
   overflow: hidden;
@@ -50,7 +48,6 @@ code {
   transition:  0.6s;
 }
 
->>>>>>> a9bbcff756e5289b74f07ba34f8ff8283c71739f
 /* Links inside the navbar */
 .navbar a {
   float: left;
@@ -161,14 +158,6 @@ code {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
-.logo-image{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: -6px;
-=======
 .image {
   position: relative;
   height: calc(100% - 325px);
@@ -205,5 +194,4 @@ h3 {
   text-align: center;
   padding: 3rem 1rem;
   text-align: justify;
->>>>>>> a9bbcff756e5289b74f07ba34f8ff8283c71739f
 }
