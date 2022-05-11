@@ -1,59 +1,73 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 import Search from './Search';
-
-const ACTIVE = {
-    background: 'grey',
-    borderRadius: '10px'
-}
+import uniqloLogo from './images/uniqlo-logo-black-and-white-removebg-preview (1).png'
 
 function NavBar({ handleSearch }) {
     return (
-        <div className='navbar' style={{ position: 'sticky', top: 0 }}>
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul className="navbar-nav">
             <NavLink
                 to='/'
                 exact
-                activeStyle={ACTIVE}>
-                    Home
+                >
+                    <li className="nav-item active">
+                    <i className="fa-solid fa-not-equal"></i><img src={uniqloLogo} className="logo-image" alt="logo"/>
+                    </li>
             </NavLink>
             <NavLink
                 to='/all'
                 exact
-                activeStyle={ACTIVE}>
+                >
+                    <li className="nav-item active">
                     All
+                    </li>                    
             </NavLink>
             <NavLink
                 to='/tops'
                 exact
-                activeStyle={ACTIVE}>
+                >
+                    <li className="nav-item active">
                     Tops
+                    </li>
             </NavLink>
             <NavLink
                 to='/bottoms'
                 exact 
-                activeStyle={ACTIVE}>
+                >
+                    <li className="nav-item active">
                     Bottoms
+                    </li>
             </NavLink>
             <NavLink
                 to='/accessories'
-                exact 
-                activeStyle={ACTIVE}>
+                exact
+                >
+                    <li className="nav-item active">
                     Accessories & Shoes
+                    </li>
             </NavLink>
+        </ul>
+        </div>
+        <div className="navbar-nav ml-auto">
+        <ul className="navbar-nav">
             <NavLink
                 to='/favorites'
-                exact 
-                activeStyle={ACTIVE}>
-                    Favorites 
+                exact
+                >
+                <i className="fa-solid fa-star"></i>
             </NavLink>
             <NavLink
                 to='/add'
-                exact 
-                activeStyle={ACTIVE}>
-                    Add Item
+                exact
+                >
+                <i className="fa fa-plus" aria-hidden="true"></i>
             </NavLink>
             <Search handleSearch={handleSearch}/>
+        </ul>
         </div>
+    </nav>
     )
 }
 

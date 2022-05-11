@@ -37,7 +37,7 @@ function App() {
 
   // filter through all objects that match searched state
   const clothesToDisplay = clothes.filter((obj) => 
-  obj.name.toLowerCase().includes(searched) ? true : false)
+  obj.name.toLowerCase().includes(searched) || obj.brand.toLowerCase().includes(searched) || obj.category.toLowerCase().includes(searched)  ? true : false)
 
   return (
     <div className="App">

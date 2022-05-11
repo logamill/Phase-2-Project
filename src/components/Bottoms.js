@@ -14,7 +14,7 @@ return (
         </div>
     <div className="row h-100">
     <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Bottoms</h2>
-      <div class="grid">
+      <div className="grid">
         {bottomsToDisplay.map((card) => (
           <FlipCard key={card.id} card={card} />
         ))}

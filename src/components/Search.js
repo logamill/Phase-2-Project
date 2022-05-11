@@ -2,8 +2,8 @@ import React from 'react';
 
 function Search({ handleSearch }) {
     return (
-        <div class='topnav' style={{ borderRadius: '10px' }}>
-            <input className='search'
+        <div className='topnav'>
+            <input className="form-control mr-sm-2"
             type="text"
             placeholder="Search..."
             onChange={(e) => handleSearch(e.target.value)}/>

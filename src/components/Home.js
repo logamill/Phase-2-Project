@@ -16,8 +16,6 @@ function Home({ clothes }) {
 
     const latestItems = (clothes.length -4)
 
-    console.log(clothes)
-    console.log(latestItems)
     const newAdditions = clothes.filter((item) => 
         item.id > latestItems ? true : false)
         
@@ -33,7 +31,7 @@ function Home({ clothes }) {
                 </div>
             </div>
             <h2 style={{ margin: '50px' }}>Latest Additions</h2>
-            <div class="grid">
+            <div className="grid">
                      {newAdditions.map((card) => (
                     <FlipCard key={card.id} card={card} />
         ))}

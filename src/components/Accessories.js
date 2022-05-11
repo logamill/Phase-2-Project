@@ -14,7 +14,7 @@ function Accessories({ clothes }) {
         </div>
         <div className="row h-100">
             <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Accessories & Shoes</h2>
-          <div class="grid">
+          <div className="grid">
             {accsToDisplay.map((card) => (
               <FlipCard key={card.id} card={card} />
             ))}
