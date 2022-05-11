@@ -2,15 +2,14 @@ import React from 'react';
 import FlipCard from './FlipCard';
 
 const BANNER_STYLE = {
-    textshadow:{
-    fontSize:100,
-    color:'#FFFFFF',
-    paddingLeft:30,
-    paddingRight:30,
-    textShadowColor:'#585858',
-    textShadowOffset:{width: 5, height: 5},
-    textShadowRadius:10,
-  },
+    display: 'ms-flexbox',
+    marginTop: '50px',
+    color: 'white',
+    fontSize: '90px',
+    marginBottom: '50px',
+    border: '3px',
+    fontStyle: 'courier',
+    textShadow: '-1px 0 black, 0 1px black, 2px 0 black, 0 -1px black',
 }
 
 function Home({ clothes }) {
@@ -26,12 +25,10 @@ function Home({ clothes }) {
         <div>
         <div className='main' style={{ 
             backgroundImage: `url("https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg")`,
-            borderRadius: '10px' 
+            borderRadius: '10px',
           }}>
-            <h1 style={{ display: '-ms-flexbox', marginTop: '50px', color: 'white', fontSize: '90px', }}>Not Uniqlo </h1>  
+            <h1 style={BANNER_STYLE}>Not Uniqlo </h1>  
             <div className="home-container">
-                {/* <img src="https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg" /> */}
-                <h1 style={BANNER_STYLE}> _</h1>
                 </div>
             </div>
             <h2 style={{ margin: '50px' }}>Latest Additions</h2>

@@ -8,7 +8,7 @@ return (
     <div>    
     <div className="main" style={{ 
         backgroundImage: `url("https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg")`,
-        borderRadius: '10px' 
+        borderRadius: '10px',
       }}>
           </div>
     <div className="row h-100" >
