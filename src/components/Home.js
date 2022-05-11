@@ -20,6 +20,7 @@ function Home({ clothes }) {
     console.log(latestItems)
     const newAdditions = clothes.filter((item) => 
         item.id > latestItems ? true : false)
+        
 
     return (
         <div>
