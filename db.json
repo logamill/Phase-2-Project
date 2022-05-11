@@ -9,7 +9,7 @@
       "color": "Black",
       "price": 20.99,
       "size": "S",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 2,
@@ -53,7 +53,7 @@
       "color": "Blue",
       "price": 40,
       "size": "XL",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
       "color": "Gray",
       "price": 289,
       "size": "L",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
       "color": "White",
       "price": 100,
       "size": "7.5",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
       "color": "Indigo blue",
       "price": 109.99,
       "size": "XXL",
-      "favorite": false
+      "favorite": true
     }
   ]
 }

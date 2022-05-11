@@ -17,6 +17,7 @@ function App() {
   // set state needed 
   const [clothes, setClothes] = useState([])
   const [searched, setSearched] = useState('')
+  const [updateFavorite, setUpdateFavorite] = useState(true)
 
   // function to get initial fetch of data
   function getFetch() {
@@ -28,7 +29,7 @@ function App() {
   // use effect to call fetch function on page load
   useEffect(() => {
     getFetch()
-  },[])
+  },[updateFavorite])
 
   // handles search through data and resets state to searched word
   function handleSearch(e) {
@@ -48,22 +49,22 @@ function App() {
           <Home clothes={clothesToDisplay}/>
         </Route>
         <Route exact path='/all'>
-          <All clothes={clothesToDisplay}/>
+          <All clothes={clothesToDisplay} setClothes={setClothes}/>
         </Route>
         <Route exact path='/tops'>
-          <Tops clothes={clothesToDisplay} />
+          <Tops clothes={clothesToDisplay} setClothes={setClothes} />
         </Route>
         <Route exact path='/bottoms'>
-          <Bottoms clothes={clothesToDisplay} />
+          <Bottoms clothes={clothesToDisplay} setClothes={setClothes} />
         </Route>
         <Route exact path='/accessories'>
-          <Accessories clothes={clothesToDisplay} />
+          <Accessories clothes={clothesToDisplay} setClothes={setClothes} />
         </Route>
         <Route exact path='/add'>
           <ItemForm />
         </Route>
-        <Route exact path='/favorites'>
-          <Favorites clothes={clothesToDisplay} />
+        <Route exact path='/favorites' >
+          <Favorites clothes={clothesToDisplay} setClothes={setClothes} />
         </Route>
       </Switch>
     </div>

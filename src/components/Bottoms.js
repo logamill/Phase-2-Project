@@ -1,7 +1,7 @@
 import React from 'react';
 import FlipCard from './FlipCard';
 
-function Bottoms({ clothes }) {
+function Bottoms({ clothes, setClothes }) {
     const bottomsToDisplay = clothes.filter((obj) => 
     obj.category.toLowerCase() === 'bottoms' ? true : false)
  
@@ -16,7 +16,7 @@ return (
     <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Bottoms</h2>
       <div className="grid">
         {bottomsToDisplay.map((card) => (
-          <FlipCard key={card.id} card={card} />
+          <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />
         ))}
       </div>
     </div>

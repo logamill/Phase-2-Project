@@ -25,7 +25,7 @@ const Overlay = {
   }
 
 function Modal({ card, open, onClose }) {
-    const { name, brand, image, price, color, size, favorite, id } = card
+    const { name, brand, image, price, color, size, favorite } = card
 
     if(!open) return null 
 

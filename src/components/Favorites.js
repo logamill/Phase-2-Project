@@ -1,7 +1,7 @@
 import React from 'react';
 import FlipCard from './FlipCard';
 
-function Favorites({ clothes }) {
+function Favorites({ clothes, setClothes }) {
     const favsToDisplay = clothes.filter((obj) => 
         obj.favorite === true ? true : false)
 
@@ -16,7 +16,7 @@ function Favorites({ clothes }) {
             <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Favorites</h2>
           <div className="grid">
             {favsToDisplay.map((card) => (
-              <FlipCard key={card.id} card={card} />
+              <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />
             ))}
           </div>
         </div>

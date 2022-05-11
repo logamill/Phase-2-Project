@@ -1,7 +1,7 @@
 import React from 'react';
 import FlipCard from './FlipCard';
 
-function Accessories({ clothes }) {
+function Accessories({ clothes, setClothes }) {
     const accsToDisplay = clothes.filter((obj) => 
         obj.category.toLowerCase() === 'accessories & shoes' ? true : false)
 
@@ -16,7 +16,7 @@ function Accessories({ clothes }) {
             <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Accessories & Shoes</h2>
           <div className="grid">
             {accsToDisplay.map((card) => (
-              <FlipCard key={card.id} card={card} />
+              <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />
             ))}
           </div>
         </div>

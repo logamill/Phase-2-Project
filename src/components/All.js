@@ -2,7 +2,7 @@ import React from 'react';
 import FlipCard from './FlipCard';
 
 
-function All({ clothes }) {
+function All({ clothes, setClothes }) {
  
 return (
     <div>    
@@ -15,7 +15,7 @@ return (
         <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>All</h2>
       <div className="grid">
         {clothes.map((card) => (
-          <FlipCard key={card.id} card={card} />
+          <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />
         ))}
       </div>
     </div>

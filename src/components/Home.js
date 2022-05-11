@@ -7,16 +7,6 @@ import ImageFour from './ImageFour';
 import ImageOneDesc from './ImageOneDesc';
 import ImageThreeDesc from './ImageThreeDesc';
 
-const BANNER_STYLE = {
-    display: 'ms-flexbox',
-    marginTop: '50px',
-    color: 'white',
-    fontSize: '90px',
-    marginBottom: '50px',
-    border: '3px',
-    fontStyle: 'courier',
-    textShadow: '-1px 0 black, 0 1px black, 2px 0 black, 0 -1px black',
-}
 
 function Home({ clothes }) {
 
@@ -32,10 +22,9 @@ function Home({ clothes }) {
             <ImageOneDesc />
             <ImageTwo />
             <h3>check out these recent additions</h3>
-            <div class="grid">
+            <div class="grid" style={{ paddingBottom: '100px'}}>
                      {newAdditions.map((card) => (
                     <FlipCard key={card.id} card={card} />))}
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
             </div> 
             <ImageThree />
             <ImageThreeDesc />

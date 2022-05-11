@@ -1,7 +1,8 @@
 import React from 'react';
 import FlipCard from './FlipCard';
+import ImageOne from './ImageOne';
 
-function Tops({ clothes }) {
+function Tops({ clothes, setClothes }) {
 
     const topsToDisplay = clothes.filter((obj) => 
         obj.category.toLowerCase() === 'tops' ? true : false)
@@ -17,7 +18,7 @@ function Tops({ clothes }) {
         <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Tops</h2>
           <div className="grid">
             {topsToDisplay.map((card) => (
-              <FlipCard key={card.id} card={card} />
+              <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />
             ))}
           </div>
         </div>
