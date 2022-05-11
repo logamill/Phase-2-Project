@@ -24,12 +24,10 @@ const Overlay = {
     zIndex: 1000,
   }
 
-
 function Modal({ card, open, onClose }) {
-    const { name, brand, image, price, color, size, favorite } = card
+    const { name, brand, image, price, color, size, favorite, id } = card
 
     if(!open) return null 
-
 
     return ReactDom.createPortal(
         <div 
@@ -40,11 +38,11 @@ function Modal({ card, open, onClose }) {
             className='modal-style' 
             style={Modal_Style}>
             {
-                favorite === true ? <p className='favorite' >★</p> : <p className='not-favorite'>☆</p>
+                favorite === true ? <p className='favorite' >★</p> : <p className='not-favorite' >☆</p>
             }
             <img className='modal-image' src={image} alt={name}></img>
-            <p>{name}</p>
-                <ul>
+            <p className='modal-desc'>{name}</p>
+                <ul className='modal-list'>
                     <li>Brand: {brand}</li>
                     <li>Price: ${price}</li>
                     <li>Color: {color}</li>

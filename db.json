@@ -87,17 +87,6 @@
       "price": 109.99,
       "size": "XXL",
       "favorite": false
-    },
-    {
-      "category": "Tops",
-      "name": "New item",
-      "image": "jfklds",
-      "brand": "Uniqlo",
-      "color": "#2227b4",
-      "price": "150",
-      "size": "L",
-      "favorite": "false",
-      "id": 9
     }
   ]
 }
