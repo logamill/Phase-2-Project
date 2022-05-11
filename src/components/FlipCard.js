@@ -9,10 +9,11 @@ function FlipCard({ card }) {
         <div>
         <div className='full-card' onClick={() => setIsOpen(!isOpen)} >
               <img className='card-image' src={card.image} alt={card.name} />
-              <p className='card-desc'>{card.brand}</p><button>☆</button>
+              <p className='card-desc'>{card.brand}</p>
               <p>{card.name}
               <span>  </span>  
                ${card.price}</p>
+               <p>☆</p>
               <Modal card={card} open={isOpen} onClose={() => setIsOpen(false)}></Modal>
         </div>
         </div>   
