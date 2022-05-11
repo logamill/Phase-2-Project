@@ -195,3 +195,9 @@ h3 {
   padding: 3rem 1rem;
   text-align: justify;
 }
+
+.logo-image{
+  width: 22px;
+  height: 22px;
+  margin-top: -5px
+}
