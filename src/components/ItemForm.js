@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function ItemForm() {
+function ItemForm({setUpdatePage}) {
 
     const [formData, setFormData] = useState({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: "false"})
 
@@ -23,29 +23,29 @@ function ItemForm() {
             body: JSON.stringify(formData)
         })
         .then (r => r.json())
-        .then (data => console.log(data))
+        .then (data => setUpdatePage(data))
 
         setFormData({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: "false"})
     }
 
-    const backgroundStyle = {backgroundImage: 'url("https://res.cloudinary.com/trunk-club/image/upload/f_auto,q_auto/Blog/20085_TCM_ClassicStyles_Header.jpg")',
-    height:"400px", width:"100%", objectFit: "contain"}
+    const backgroundStyle = {backgroundImage: 'url("https://diana.divi-den.com/wp-content/uploads/2019/01/diana-noble-header-image2.jpg")',
+    height:"400px", width:"100%", padding: "20px"}
 
     return (
     <div className='main'>
         
         <div
-            class="p-5 text-center bg-image"
+            className="p-5 text-center bg-image"
             style={backgroundStyle}
         >
 
-            <div class="d-flex justify-content-center align-items-center h-100">
+            <div className="d-flex justify-content-center align-items-center h-100">
             
-                <div class="text-white">
+                <div className="text-white">
                 
-                    <h1 class='mb-3'>Add New Item</h1>
+                    <h1 className='mb-3' style={{fontSize: "60px", textShadow: "3px  3px 5px #777" }}>Add New Item</h1>
             
-                    <h4 class="mb-3">Bring your trend!</h4>
+                    <h4 className="mb-3" style={{fontSize: "30px", textShadow: "3px  3px 5px #777"}}>Bring your trend!</h4>
 
                 </div>
             </div>
@@ -55,9 +55,9 @@ function ItemForm() {
 
         <form className="form" id='form' onSubmit={handleSubmit}>
 
-        <div className="form-group row">
+        <div className="form-group row" style={{padding:"15px"}}>
 
-            <label className="col-sm-1 col-form-label" for="name">Name</label>
+            <label className="col-sm-1 col-form-label" for="name">Type</label>
 
             <div className="col-sm-11">
 
@@ -69,7 +69,7 @@ function ItemForm() {
         
         </div>
 
-        <div className="form-group row">
+        <div className="form-group row" style={{padding:"15px"}}>
             
             <label className="col-sm-1 col-form-label" for="image">Image</label>
 
@@ -84,7 +84,7 @@ function ItemForm() {
 
         </div>
 
-        <div className="form-group row">
+        <div className="form-group row" style={{padding:"15px"}}>
 
             <label className="col-sm-1 col-form-label" for="brand">Brand</label>
 
@@ -111,7 +111,7 @@ function ItemForm() {
         </div>
 
 
-        <div className="form-group row">
+        <div className="form-group row" style={{padding:"15px"}}>
 
             <label className="col-sm-1 col-form-label" for="category">Category</label>
 
@@ -146,7 +146,7 @@ function ItemForm() {
 
             <div className="col-sm-3">
 
-                <input class="form-control-color" type="color" name="color" placeholder="Color"
+                <input className="form-control-color" type="color" name="color" placeholder="Color"
                 value={formData.color}
                 onChange={handleChange}    
                 />
@@ -155,7 +155,7 @@ function ItemForm() {
 
         </div>
 
-            <button type="submit" class="btn btn-outline-dark">Add</button>
+            <button type="submit" className="btn btn-outline-dark">Add</button>
             
         </form>
 

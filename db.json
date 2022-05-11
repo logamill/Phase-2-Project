@@ -42,7 +42,7 @@
       "color": "Silver",
       "price": 289,
       "size": "7",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 5,
@@ -87,6 +87,105 @@
       "price": 109.99,
       "size": "XXL",
       "favorite": false
+    },
+    {
+      "category": "Tops",
+      "name": "PEACE HAND PIGMENT DYED TEE",
+      "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/1904861_BLAC_2_900x.jpg",
+      "brand": "Stüssy",
+      "color": "#000000",
+      "price": "45",
+      "size": "S",
+      "favorite": "false",
+      "id": 9
+    },
+    {
+      "category": "bottoms",
+      "name": "CAMO CANVAS WORK PANT",
+      "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116539_BROW_1_900x.jpg?v=1643307542",
+      "brand": "Stüssy",
+      "color": "#bbb502",
+      "price": "160",
+      "size": "28",
+      "favorite": "false",
+      "id": 10
+    },
+    {
+      "category": "bottoms",
+      "name": "OVERDYED BIG OL JEAN",
+      "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116677_PINK_1_900x.jpg",
+      "brand": "Stüssy",
+      "color": "#f600fa",
+      "price": "160",
+      "size": "30",
+      "favorite": "false",
+      "id": 11
+    },
+    {
+      "category": "bottoms",
+      "name": "NYLON RIPSTOP SURPLUS CARGO",
+      "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116543_BONE_1_900x.jpg",
+      "brand": "Stüssy",
+      "color": "#ffffff",
+      "price": "185",
+      "size": "34",
+      "favorite": "false",
+      "id": 12
+    },
+    {
+      "category": "bottoms",
+      "name": "DYED CANVAS BEACH PANT",
+      "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116579_AMBE_1_900x.jpg",
+      "brand": "Stüssy",
+      "color": "#ffac4d",
+      "price": "135",
+      "size": "XL",
+      "favorite": "false",
+      "id": 13
+    },
+    {
+      "category": "bottoms",
+      "name": "ADICOLOR CLASSICS BECKENBAUER PRIMEBLUE TRACK PANTS",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8db86f7c0519410a9fbaad22011527fd_9366/Adicolor_Classics_Beckenbauer_Primeblue_Track_Pants_Black_H09115_21_model.jpg",
+      "brand": "Adidas",
+      "color": "#000000",
+      "price": "70",
+      "size": "XL",
+      "favorite": "false",
+      "id": 14
+    },
+    {
+      "category": "bottoms",
+      "name": "PUMA x AMI Wide Pants",
+      "image": "https://cdn-images.farfetch-contents.com/puma-puma-x-ami-wide-pants_17991139_38376834_1920.jpg",
+      "brand": "AMI Paris x Puma",
+      "color": "#2ead00",
+      "price": "150",
+      "size": "L",
+      "favorite": "false",
+      "id": 15
+    },
+    {
+      "category": "Tops",
+      "name": "adidas Originals Kids' Big Juniors Outline Crewneck Sweatshirt",
+      "image": "https://m.media-amazon.com/images/I/81-D1I1JYaL._AC_UY1000_.jpg",
+      "brand": "Adidas",
+      "color": "#0048f0",
+      "price": "45",
+      "size": "M",
+      "favorite": "false",
+      "id": 16
+    },
+    {
+      "category": "Tops",
+      "name": "Essentials Big Logo Men's Hoodie",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/846812/11/fnd/PNA/fmt/png",
+      "brand": "Puma",
+      "color": "#ff0000",
+      "price": "34.99",
+      "size": "S",
+      "favorite": "false",
+      "id": 17
     }
   ]
 }

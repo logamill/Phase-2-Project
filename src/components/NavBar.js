@@ -1,55 +1,73 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 import Search from './Search';
+import uniqloLogo from './images/uniqlo-logo-black-and-white-removebg-preview (1).png'
 
-
-const linkStyles = { 
-    display: 'inline-block',
-    width: '50px',
-    padding: '12px',
-    margin: '0 6px 6px',
-    background: 'blue',
-    textDecoration: 'none',  
-    color: 'white',
-}
-
-function NavBar() {
+function NavBar({ handleSearch }) {
     return (
-        <div className='navbar'>
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul className="navbar-nav">
             <NavLink
                 to='/'
                 exact
-                activeStyle={{
-                    background: 'grey'
-                }}>
-                    Home
-                </NavLink>
-                <NavLink
+                >
+                    <li className="nav-item active">
+                    <i className="fa-solid fa-not-equal"></i><img src={uniqloLogo} className="logo-image" alt="logo"/>
+                    </li>
+            </NavLink>
+            <NavLink
+                to='/all'
+                exact
+                >
+                    <li className="nav-item active">
+                    All
+                    </li>                    
+            </NavLink>
+            <NavLink
                 to='/tops'
                 exact
-                activeStyle={{
-                    background: 'grey'
-                }}>
+                >
+                    <li className="nav-item active">
                     Tops
-                </NavLink>
+                    </li>
+            </NavLink>
             <NavLink
                 to='/bottoms'
                 exact 
-                activeStyle={{
-                    background: 'grey'
-                }}>
+                >
+                    <li className="nav-item active">
                     Bottoms
-                </NavLink>
+                    </li>
+            </NavLink>
+            <NavLink
+                to='/accessories'
+                exact
+                >
+                    <li className="nav-item active">
+                    Accessories & Shoes
+                    </li>
+            </NavLink>
+        </ul>
+        </div>
+        <div className="navbar-nav ml-auto">
+        <ul className="navbar-nav">
+            <NavLink
+                to='/favorites'
+                exact
+                >
+                <i className="fa-solid fa-star"></i>
+            </NavLink>
             <NavLink
                 to='/add'
-                exact 
-                activeStyle={{
-                    background: 'grey'
-                }}>
-                    Add Item
-                </NavLink>
-            <Search />
+                exact
+                >
+                <i className="fa fa-plus" aria-hidden="true"></i>
+            </NavLink>
+            <Search handleSearch={handleSearch}/>
+        </ul>
         </div>
+    </nav>
     )
 }
 
