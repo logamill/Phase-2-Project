@@ -75,7 +75,7 @@
       "color": "White",
       "price": 100,
       "size": "7.5",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 8,
@@ -129,7 +129,7 @@
       "color": "#ffffff",
       "price": "185",
       "size": "34",
-      "favorite": false,
+      "favorite": true,
       "id": 12
     },
     {
@@ -283,7 +283,7 @@
       "color": "#57cdff",
       "price": "60.99",
       "size": "8",
-      "favorite": false,
+      "favorite": true,
       "id": 26
     },
     {
@@ -305,7 +305,7 @@
       "color": "#29a2ff",
       "price": "1892",
       "size": "9",
-      "favorite": false,
+      "favorite": true,
       "id": 28
     },
     {
@@ -316,7 +316,7 @@
       "color": "#9c9c9c",
       "price": "145.00",
       "size": "22in",
-      "favorite": false,
+      "favorite": true,
       "id": 29
     },
     {
@@ -338,7 +338,7 @@
       "color": "#ccb838",
       "price": "266",
       "size": "7",
-      "favorite": false,
+      "favorite": true,
       "id": 31
     },
     {
@@ -371,7 +371,7 @@
       "color": "#080808",
       "price": "900",
       "size": "L",
-      "favorite": false,
+      "favorite": true,
       "id": 35
     }
   ]

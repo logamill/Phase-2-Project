@@ -15,23 +15,12 @@ import ItemForm from './ItemForm';
 import Summer from './Summer';
 import { PropagateLoader } from 'react-spinners';
 
-
 function App() {
   // set state needed 
   const [clothes, setClothes] = useState([])
   const [searched, setSearched] = useState('')
   const [loading, setLoading] = useState(false)
   const [updatePage, setUpdatePage] = useState(false)
-<<<<<<< HEAD
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false)
-    }, 2000)
-  },[clothes, updatePage])
-=======
->>>>>>> logan
 
   // function to get initial fetch of data
   function getFetch() {
@@ -50,7 +39,7 @@ function App() {
     setTimeout(() => {
       setLoading(false)
     }, 2500)
-  },[clothes])
+  },[])
 
   // handles search through data and resets state to searched word
   function handleSearch(e) {
@@ -71,37 +60,9 @@ function App() {
           :
       <div className='App'>
       <NavBar handleSearch={handleSearch}/>
-<<<<<<< HEAD
-      <Switch>
-        <Route exact path='/'>
-          <Home clothes={clothesToDisplay}/>
-        </Route>
-        <Route exact path='/all'>
-          <All clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
-        </Route>
-        <Route exact path='/tops'>
-          <Tops clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/bottoms'>
-          <Bottoms clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/accessories'>
-          <Accessories clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/summer'>
-          <Summer clothes={clothesToDisplay} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/add'>
-          <ItemForm setUpdatePage={setUpdatePage}/>
-        </Route>
-        <Route exact path='/favorites' >
-          <Favorites clothes={clothesToDisplay} search={searched} setClothes={setClothes} />
-        </Route>
-      </Switch>
-=======
         <Switch>
           <Route exact path='/'>
-            <Home clothes={clothesToDisplay}/>
+            <Home clothes={clothesToDisplay} setClothes={setClothes} />
           </Route>
           <Route exact path='/all'>
             <All clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
@@ -130,7 +91,6 @@ function App() {
         </Switch>
       </div>
       }
->>>>>>> logan
     </div>
   )
 }

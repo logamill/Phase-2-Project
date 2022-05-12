@@ -8,9 +8,9 @@ import ImageOneDesc from './ImageOneDesc';
 import ImageThreeDesc from './ImageThreeDesc';
 
 
-function Home({ clothes }) {
+function Home({ clothes, setClothes }) {
 
-    const latestItems = (clothes.length -5)
+    const latestItems = (clothes.length -9)
 
     const newAdditions = clothes.filter((item) => 
         item.id > latestItems ? true : false)
@@ -20,9 +20,9 @@ function Home({ clothes }) {
             <ImageOne /> 
             <ImageOneDesc />
             <ImageTwo />
-            <div class="grid" style={{ paddingBottom: '100px'}}>
+            <div class="grid" style={{ paddingBottom: '30px'}}>
                      {newAdditions.map((card) => (
-                    <FlipCard key={card.id} card={card} />))}
+                    <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />))}
             </div> 
             <ImageThree />
             <ImageThreeDesc />
