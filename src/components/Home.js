@@ -15,7 +15,6 @@ function Home({ clothes }) {
     const newAdditions = clothes.filter((item) => 
         item.id > latestItems ? true : false)
         
-
     return (
         <div>
             <ImageOne /> 

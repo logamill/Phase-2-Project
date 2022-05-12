@@ -110,6 +110,8 @@ code {
   }
 }
 
+
+
 /* Main content */
 .main {
   /* margin-top: 50px; Add a top margin to avoid content overlay */
@@ -217,6 +219,15 @@ code {
   width: 100%;
 }
 
+.content-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 90vh;
+  width: 97%;
+}
+
 .content-load span.img-txt {
   background-color: #333;
   text-transform: uppercase;
@@ -239,13 +250,17 @@ code {
   padding: 1rem;
   font-size: 1.5rem;
   letter-spacing: 10px;
-  animation-name: nav-link-load;
-  animation-duration: var(--nav-link-load-time);
-  animation-timing-function: ease-in;
-  animation-delay: var(--nav-link-load-time);
-  animation-fill-mode: forwards;
-  transform: scale(0);
 }
+
+.content-outer span.img-txt {
+  background-color: #333;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  padding: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
 
 h3 {
   letter-spacing: 6px;

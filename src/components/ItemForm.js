@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 
-function ItemForm({setUpdatePage}) {
-
+function ItemForm({ setUpdatePage }) {
     const [formData, setFormData] = useState({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: "false"})
+    let history = useHistory();
 
     function handleChange (e) {
         const name = e.target.name
@@ -24,7 +25,9 @@ function ItemForm({setUpdatePage}) {
         .then (r => r.json())
         .then (data => setUpdatePage(data))
 
-        setFormData({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: "false"})
+        console.log('hi')
+
+        setFormData({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: false})
     }
 
     const backgroundStyle = {backgroundImage: 'url("https://diana.divi-den.com/wp-content/uploads/2019/01/diana-noble-header-image2.jpg")',

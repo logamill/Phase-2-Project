@@ -107,7 +107,7 @@
       "color": "#bbb502",
       "price": "160",
       "size": "28",
-      "favorite": false,
+      "favorite": true,
       "id": 10
     },
     {
@@ -118,7 +118,7 @@
       "color": "#f600fa",
       "price": "160",
       "size": "30",
-      "favorite": false,
+      "favorite": true,
       "id": 11
     },
     {
@@ -351,6 +351,28 @@
       "size": "9",
       "favorite": false,
       "id": 32
+    },
+    {
+      "category": "Outerwear",
+      "name": "Barrio Boy Global Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0260/2021/6880/products/BBOY_HOOD_GREEN_1024x1024@2x.png?v=1579900138",
+      "brand": "Bario Boy",
+      "color": "#2a9831",
+      "price": "150.00",
+      "size": "L",
+      "favorite": false,
+      "id": 34
+    },
+    {
+      "category": "Outerwear",
+      "name": "Leather Jacket",
+      "image": "https://www.pngall.com/wp-content/uploads/4/Black-Leather-Jacket-PNG-Image.png",
+      "brand": "Schott Leather ",
+      "color": "#080808",
+      "price": "900",
+      "size": "L",
+      "favorite": false,
+      "id": 35
     }
   ]
 }
