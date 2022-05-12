@@ -100,7 +100,7 @@
       "id": 9
     },
     {
-      "category": "bottoms",
+      "category": "Bottoms",
       "name": "CAMO CANVAS WORK PANT",
       "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116539_BROW_1_900x.jpg?v=1643307542",
       "brand": "Stüssy",
@@ -111,7 +111,7 @@
       "id": 10
     },
     {
-      "category": "bottoms",
+      "category": "Bottoms",
       "name": "OVERDYED BIG OL JEAN",
       "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116677_PINK_1_900x.jpg",
       "brand": "Stüssy",
@@ -122,7 +122,7 @@
       "id": 11
     },
     {
-      "category": "bottoms",
+      "category": "Bottoms",
       "name": "NYLON RIPSTOP SURPLUS CARGO",
       "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116543_BONE_1_900x.jpg",
       "brand": "Stüssy",
@@ -133,7 +133,7 @@
       "id": 12
     },
     {
-      "category": "bottoms",
+      "category": "Bottoms",
       "name": "DYED CANVAS BEACH PANT",
       "image": "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/116579_AMBE_1_900x.jpg",
       "brand": "Stüssy",
@@ -144,7 +144,7 @@
       "id": 13
     },
     {
-      "category": "bottoms",
+      "category": "Bottoms",
       "name": "ADICOLOR CLASSICS BECKENBAUER PRIMEBLUE TRACK PANTS",
       "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8db86f7c0519410a9fbaad22011527fd_9366/Adicolor_Classics_Beckenbauer_Primeblue_Track_Pants_Black_H09115_21_model.jpg",
       "brand": "Adidas",
@@ -155,7 +155,7 @@
       "id": 14
     },
     {
-      "category": "bottoms",
+      "category": "Bottoms",
       "name": "PUMA x AMI Wide Pants",
       "image": "https://cdn-images.farfetch-contents.com/puma-puma-x-ami-wide-pants_17991139_38376834_1920.jpg",
       "brand": "AMI Paris x Puma",
@@ -186,6 +186,171 @@
       "size": "S",
       "favorite": "false",
       "id": 17
+    },
+    {
+      "category": "Bottoms",
+      "name": "1995 09C43 Straight Jeans",
+      "image": "https://shop.diesel.com/dw/image/v2/BBLG_PRD/on/demandware.static/-/Sites-diesel-master-catalog/default/dw8196a831/images/large/A03568_09C43_44Q_I.jpg",
+      "brand": "DIESEL",
+      "color": "#ff0000",
+      "price": "195",
+      "size": "36",
+      "favorite": "false",
+      "id": 18
+    },
+    {
+      "category": "Bottoms",
+      "name": "Loose Fit Double Knee Work Pant",
+      "image": "https://m.media-amazon.com/images/I/81XTtEdhYgL._AC_UY741_.jpg",
+      "brand": "Dickies",
+      "color": "#002d75",
+      "price": "29.86",
+      "size": "34",
+      "favorite": "false",
+      "id": 19
+    },
+    {
+      "category": "Bottoms",
+      "name": "Camp pant in slub cotton",
+      "image": "https://www.jcrew.com/s7-img-facade/BF104_WZ2039?fmt=jpeg",
+      "brand": "J.CREW",
+      "color": "#fde026",
+      "price": "98.00",
+      "size": "33/30",
+      "favorite": "false",
+      "id": 20
+    },
+    {
+      "category": "Tops",
+      "name": "S-BUNIS",
+      "image": "https://shop.diesel.com/dw/image/v2/BBLG_PRD/on/demandware.static/-/Sites-diesel-master-catalog/default/dwa9262481/images/large/A03012_0QCAD_22K_I.jpg",
+      "brand": "DIESEL",
+      "color": "#ffc72e",
+      "price": "157.00",
+      "size": "L",
+      "favorite": "false",
+      "id": 21
+    },
+    {
+      "category": "Tops",
+      "name": "Attack On Titan Colorblock Black T-Shirt",
+      "image": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Attack-On-Titan-Colorblock-Black-T-Shirt-_354201-front-US.jpg",
+      "brand": "Zumies",
+      "color": "#000000",
+      "price": "24.95",
+      "size": "S",
+      "favorite": "false",
+      "id": 22
+    },
+    {
+      "category": "Tops",
+      "name": "COTTON POPLIN BOWLING SHIRT WITH STREET FLOWERS COUTURE PEONIES PRINT",
+      "image": "https://www.valentino.com/variants/images/38063312420187901/F/w2000.jpg",
+      "brand": "VALENTINO GARAVANI",
+      "color": "#ffcf4d",
+      "price": "1250.00",
+      "size": "48",
+      "favorite": "false",
+      "id": 23
+    },
+    {
+      "category": "Tops",
+      "name": "Plaid Shirt, Single Breasted Casual Regular Fit Turn Down Collar Classic Spring and Autumn Clothing",
+      "image": "https://i5.walmartimages.com/asr/3e6f3f19-385e-476d-a626-0a8d008d0836.904ef536c9cf371c57aaa42e46486cba.jpeg",
+      "brand": "Musuos",
+      "color": "#365ed9",
+      "price": "18.47",
+      "size": "XL",
+      "favorite": "false",
+      "id": 24
+    },
+    {
+      "category": "Tops",
+      "name": "Coca Cola By PacSun Two Thousands T-Shirt",
+      "image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwcbe2ee6b/product_images/0097491920080NEW_00_783.jpg",
+      "brand": "PACSUN",
+      "color": "#fff3c7",
+      "price": "18.18",
+      "size": "L",
+      "favorite": "false",
+      "id": 25
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "NIKE AIR JORDAN 1 RETRO HIGH OG - UNIVERSITY BLUE",
+      "image": "https://breakingsoles.com/2861-large_default/air-jordan-1-retro-high-og-university-blue.jpg",
+      "brand": "NIKE",
+      "color": "#57cdff",
+      "price": "60.99",
+      "size": "8",
+      "favorite": "false",
+      "id": 26
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Air Jordan 1 Retro High OG 'Patent Bred'",
+      "image": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/062/992/408/original/784379_01.jpg.jpeg",
+      "brand": "Nike",
+      "color": "#ff0000",
+      "price": "459",
+      "size": "6",
+      "favorite": "false",
+      "id": 27
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Off White x Air Jordan 1 Retro High OG UNC",
+      "image": "https://goodshopcheap.com/wp-content/uploads/2022/03/0d3e2a7ceeda11eb95fe323d9c58e369.jpg",
+      "brand": "Nike",
+      "color": "#29a2ff",
+      "price": "1892",
+      "size": "9",
+      "favorite": "false",
+      "id": 28
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Gold 'Le Collier Chiquito' Necklace",
+      "image": "https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_2.0/221553F010003_1/jacquemus-gold-le-collier-chiquito-necklace.jpg",
+      "brand": " JACQUEMUS",
+      "color": "#9c9c9c",
+      "price": "145.00",
+      "size": "22in",
+      "favorite": "false",
+      "id": 29
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Skyline Pendant",
+      "image": "https://jaxxon.com/static/216c8a01b6292f3bf6100606176f4a49/62c39/SPSkylineSilver.webp",
+      "brand": "JAXXON",
+      "color": "#ffffff",
+      "price": "79",
+      "size": "18in",
+      "favorite": "false",
+      "id": 30
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Yeezy Foam Runner 'Stone Sage'",
+      "image": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/068/883/873/original/906312_01.jpg.jpeg",
+      "brand": "Adidas",
+      "color": "#ccb838",
+      "price": "266",
+      "size": "7",
+      "favorite": "false",
+      "id": 31
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "BMW MMS RS-Z Men's Sneakers",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/307059/02/sv01/fnd/PNA/fmt/png",
+      "brand": "Puma",
+      "color": "#ffc561",
+      "price": "110",
+      "size": "9",
+      "favorite": "false",
+      "id": 32
     }
   ]
 }

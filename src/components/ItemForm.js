@@ -122,10 +122,10 @@ function ItemForm({setUpdatePage}) {
                     value={formData.category}
                     onChange={handleChange}
                     >
-                        <option value="tops">Tops</option>
-                        <option value="bottoms">Bottoms</option>
-                        <option value="outerwear">Outerwear</option>
-                        <option value="accessories_shoes">Accessories & Shoes</option>
+                        <option value="Tops">Tops</option>
+                        <option value="Bottoms">Bottoms</option>
+                        <option value="Outerwear">Outerwear</option>
+                        <option value="Accessories & Shoes">Accessories & Shoes</option>
                 </select>
 
             </div>
