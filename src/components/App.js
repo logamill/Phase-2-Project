@@ -86,7 +86,7 @@ function App() {
             <ItemForm setUpdatePage={setUpdatePage} />
           </Route>
           <Route exact path='/favorites' >
-            <Favorites clothes={clothesToDisplay} search={searched} setClothes={setClothes} />
+            <Favorites clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
           </Route>
         </Switch>
       </div>

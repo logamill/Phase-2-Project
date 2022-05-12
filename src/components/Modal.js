@@ -19,7 +19,6 @@ const Overlay = {
     backgroundColor: 'white',
     padding: '50px',
     borderRadius: '15px',
-    height: '90%',
     width: '40%',
     zIndex: 1000,
   }
