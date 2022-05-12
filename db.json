@@ -75,7 +75,7 @@
       "color": "White",
       "price": 100,
       "size": "7.5",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 8,

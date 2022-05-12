@@ -1,10 +1,10 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import summergirl from '../img/summerpage.jpg'
+import skate from '../img/skate.jpg'
 
 const SummerImage = () => (
 
-        <Parallax bgImage={summergirl} className='image'
+        <Parallax bgImage={skate} className='image'
             strength={800}>
                 <div className='content'>
                 <div className="home-container">

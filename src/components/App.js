@@ -12,12 +12,21 @@ import Accessories from './Accessories';
 import Favorites from './Favorites';
 import ItemForm from './ItemForm';
 import Summer from './Summer';
+import PropagateLoader from "react-spinners/ClipLoader"
 
 
 function App() {
   // set state needed 
   const [clothes, setClothes] = useState([])
   const [searched, setSearched] = useState('')
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  },[clothes])
 
   // function to get initial fetch of data
   function getFetch() {
@@ -41,8 +50,7 @@ function App() {
   obj.name.toLowerCase().includes(searched) || obj.brand.toLowerCase().includes(searched) || obj.category.toLowerCase().includes(searched)  ? true : false)
 
   return (
-    <div className="App">
-      {/* NavBar outside of switch routes so it stays on all pages */}
+      <div className='App' >
       <NavBar handleSearch={handleSearch}/>
       <Switch>
         <Route exact path='/'>
@@ -52,13 +60,13 @@ function App() {
           <All clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
         </Route>
         <Route exact path='/tops'>
-          <Tops clothes={clothesToDisplay} setClothes={setClothes} />
+          <Tops clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
         </Route>
         <Route exact path='/bottoms'>
-          <Bottoms clothes={clothesToDisplay} setClothes={setClothes} />
+          <Bottoms clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
         </Route>
         <Route exact path='/accessories'>
-          <Accessories clothes={clothesToDisplay} setClothes={setClothes} />
+          <Accessories clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
         </Route>
         <Route exact path='/summer'>
           <Summer clothes={clothesToDisplay} setClothes={setClothes} />
@@ -67,7 +75,7 @@ function App() {
           <ItemForm />
         </Route>
         <Route exact path='/favorites' >
-          <Favorites clothes={clothesToDisplay} setClothes={setClothes} />
+          <Favorites clothes={clothesToDisplay} search={searched} setClothes={setClothes} />
         </Route>
       </Switch>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import bottoms from '../img/bottoms.jpg'
+import bottoms from '../img/skirt.jpg'
 
 const BottomsImage = () => (
 
