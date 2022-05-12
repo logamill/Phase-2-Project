@@ -12,7 +12,6 @@ function ItemForm({setUpdatePage}) {
             ...formData,
             [name]: value
         })
-
     }
 
     function handleSubmit (e) {

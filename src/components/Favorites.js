@@ -1,22 +1,18 @@
 import React from 'react';
 import FlipCard from './FlipCard';
+import FavoriteImage from './FavoriteImage';
 
-function Favorites({ clothes }) {
+function Favorites({ clothes, setClothes }) {
     const favsToDisplay = clothes.filter((obj) => 
         obj.favorite === true ? true : false)
 
     return (
         <div>    
-        <div className="main" style={{ 
-        backgroundImage: `url("https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg")`,
-        borderRadius: '10px' 
-            }}>
-        </div>
+            <FavoriteImage />
         <div className="row h-100">
-            <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Favorites</h2>
           <div className="grid">
             {favsToDisplay.map((card) => (
-              <FlipCard key={card.id} card={card} />
+              <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />
             ))}
           </div>
         </div>

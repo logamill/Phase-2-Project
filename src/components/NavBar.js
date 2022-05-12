@@ -48,6 +48,14 @@ function NavBar({ handleSearch }) {
                     Accessories & Shoes
                     </li>
             </NavLink>
+            <NavLink
+            to='/summer'
+            exact
+            >
+                <li className="nav-item active">
+                     Summer 2022
+                </li>
+            </NavLink>
         </ul>
         </div>
         <div className="navbar-nav ml-auto">
