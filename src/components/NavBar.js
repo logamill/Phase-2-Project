@@ -24,6 +24,14 @@ function NavBar({ handleSearch }) {
                     All
                     </li>                    
             </NavLink>
+            <NavLink 
+                to='/outerwear'
+                exact
+                >
+                    <li className="nav-item active">
+                    Outerwear
+                    </li>
+            </NavLink>
             <NavLink
                 to='/tops'
                 exact
