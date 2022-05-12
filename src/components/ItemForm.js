@@ -12,7 +12,6 @@ function ItemForm() {
             ...formData,
             [name]: value
         })
-
     }
 
     function handleSubmit (e) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import FlipCard from './FlipCard';
-import ImageOne from './ImageOne';
+import TopsImage from './TopsImage';
 
 function Tops({ clothes, setClothes }) {
 
@@ -9,16 +9,11 @@ function Tops({ clothes, setClothes }) {
 
     return (
         <div>    
-        <div className="main" style={{ 
-        backgroundImage: `url("https://c0.wallpaperflare.com/preview/827/1022/479/japan-shibuya-night-life.jpg")`,
-        borderRadius: '10px' 
-        }}>
-        </div>
+        <TopsImage />
         <div className="row h-100">
-        <h2 style={{ marginTop: '25px', marginBottom: '25px' }}>Tops</h2>
           <div className="grid">
             {topsToDisplay.map((card) => (
-              <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes} />
+              <FlipCard key={card.id} card={card} clothes={clothes} setClothes={setClothes}/>
             ))}
           </div>
         </div>

@@ -11,13 +11,13 @@ import Bottoms from './Bottoms';
 import Accessories from './Accessories';
 import Favorites from './Favorites';
 import ItemForm from './ItemForm';
+import Summer from './Summer';
 
 
 function App() {
   // set state needed 
   const [clothes, setClothes] = useState([])
   const [searched, setSearched] = useState('')
-  const [updateFavorite, setUpdateFavorite] = useState(true)
 
   // function to get initial fetch of data
   function getFetch() {
@@ -29,7 +29,7 @@ function App() {
   // use effect to call fetch function on page load
   useEffect(() => {
     getFetch()
-  },[updateFavorite])
+  },[])
 
   // handles search through data and resets state to searched word
   function handleSearch(e) {
@@ -49,7 +49,7 @@ function App() {
           <Home clothes={clothesToDisplay}/>
         </Route>
         <Route exact path='/all'>
-          <All clothes={clothesToDisplay} setClothes={setClothes}/>
+          <All clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
         </Route>
         <Route exact path='/tops'>
           <Tops clothes={clothesToDisplay} setClothes={setClothes} />
@@ -59,6 +59,9 @@ function App() {
         </Route>
         <Route exact path='/accessories'>
           <Accessories clothes={clothesToDisplay} setClothes={setClothes} />
+        </Route>
+        <Route exact path='/summer'>
+          <Summer clothes={clothesToDisplay} setClothes={setClothes} />
         </Route>
         <Route exact path='/add'>
           <ItemForm />

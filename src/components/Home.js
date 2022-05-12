@@ -10,7 +10,7 @@ import ImageThreeDesc from './ImageThreeDesc';
 
 function Home({ clothes }) {
 
-    const latestItems = (clothes.length -4)
+    const latestItems = (clothes.length -5)
 
     const newAdditions = clothes.filter((item) => 
         item.id > latestItems ? true : false)
@@ -21,7 +21,6 @@ function Home({ clothes }) {
             <ImageOne /> 
             <ImageOneDesc />
             <ImageTwo />
-            <h3>check out these recent additions</h3>
             <div class="grid" style={{ paddingBottom: '100px'}}>
                      {newAdditions.map((card) => (
                     <FlipCard key={card.id} card={card} />))}
