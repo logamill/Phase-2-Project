@@ -13,7 +13,6 @@ import Accessories from './Accessories';
 import Favorites from './Favorites';
 import ItemForm from './ItemForm';
 import Summer from './Summer';
-import ClipLoader from "react-spinners/ClipLoader";
 import { PropagateLoader } from 'react-spinners';
 
 
@@ -62,35 +61,35 @@ function App() {
           :
       <div className='App'>
       <NavBar handleSearch={handleSearch}/>
-      <Switch>
-        <Route exact path='/'>
-          <Home clothes={clothesToDisplay}/>
-        </Route>
-        <Route exact path='/all'>
-          <All clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
-        </Route>
-        <Route exact path='/outerwear'>
-          <Outerwear clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
-        </Route>
-        <Route exact path='/tops'>
-          <Tops clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/bottoms'>
-          <Bottoms clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/accessories'>
-          <Accessories clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/summer'>
-          <Summer clothes={clothesToDisplay} setClothes={setClothes} />
-        </Route>
-        <Route exact path='/add'>
-          <ItemForm setUpdatePage={setUpdatePage} />
-        </Route>
-        <Route exact path='/favorites' >
-          <Favorites clothes={clothesToDisplay} search={searched} setClothes={setClothes} />
-        </Route>
-      </Switch>
+        <Switch>
+          <Route exact path='/'>
+            <Home clothes={clothesToDisplay}/>
+          </Route>
+          <Route exact path='/all'>
+            <All clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
+          </Route>
+          <Route exact path='/outerwear'>
+            <Outerwear clothes={clothesToDisplay} searched={searched} setClothes={setClothes}/>
+          </Route>
+          <Route exact path='/tops'>
+            <Tops clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
+          </Route>
+          <Route exact path='/bottoms'>
+            <Bottoms clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
+          </Route>
+          <Route exact path='/accessories'>
+            <Accessories clothes={clothesToDisplay} searched={searched} setClothes={setClothes} />
+          </Route>
+          <Route exact path='/summer'>
+            <Summer clothes={clothesToDisplay} setClothes={setClothes} />
+          </Route>
+          <Route exact path='/add'>
+            <ItemForm setUpdatePage={setUpdatePage} />
+          </Route>
+          <Route exact path='/favorites' >
+            <Favorites clothes={clothesToDisplay} search={searched} setClothes={setClothes} />
+          </Route>
+        </Switch>
       </div>
       }
     </div>
