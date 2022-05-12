@@ -29,20 +29,34 @@ function FlipCard({ card, clothes, setClothes }) {
 
     return (
         <div>
-            {
-            !card.favorite ? 
-            <i class="fa-regular fa-star" style={{ display: 'flex', padding: '5px'}} onClick={() => handleFavorite(card)}></i>
-            :
-            <i class="fa-solid fa-star" style={{ display: 'flex', padding: '5px'}} onClick={() => handleFavorite(card)}></i>
-            }
-        <div className='full-card' onClick={() => setIsOpen(!isOpen)} >
+
+            <div className='full-card' onClick={() => setIsOpen(!isOpen)} >
               <img className='card-image' src={card.image} alt={card.name} />
-              <p className='card-desc'>{card.brand}</p>
-              <p>{card.name}
-              <span>  </span>  
-               ${card.price}</p>
-              <Modal card={card} open={isOpen} onClose={() => setIsOpen(false)}></Modal>
-        </div>
+            </div>
+
+            <h5 className='card-title' style={{padding:"7px", fontSize:"115%"}}>{card.brand}</h5>
+            <p className="text-muted mb-4">{card.name}</p>
+
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                    <h6 class="mb-3">    
+                        {!card.favorite ? 
+                        <i className="fa-regular fa-star" onClick={() => handleFavorite(card)}></i>
+                        :
+                        <i className="fa-solid fa-star" onClick={() => handleFavorite(card)}></i>
+                        }
+                    </h6>
+                </div>
+                <div class="col-md-auto">
+                    <h6 class="mb-3">|</h6>
+                </div>
+                <div class="col col-lg-2">
+                    <h6 class="mb-3">${card.price}</h6>
+                </div>
+            </div>
+              
+            <Modal card={card} open={isOpen} onClose={() => setIsOpen(false)}></Modal>
+
         </div>   
       )
     }

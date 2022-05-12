@@ -37,17 +37,42 @@ function Modal({ card, open, onClose }) {
         <div 
             className='modal-style' 
             style={Modal_Style}>
-            {
-                favorite === true ? <p className='favorite' >★</p> : <p className='not-favorite' >☆</p>
-            }
-            <img className='modal-image' src={image} alt={name}></img>
-            <p className='modal-desc'>{name}</p>
-                <ul className='modal-list'>
-                    <li>Brand: {brand}</li>
-                    <li>Price: ${price}</li>
-                    <li>Color: {color}</li>
-                    <li>Size: {size}</li>
+
+            <div style={{height: '450px', width: '350px',
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "block"}}>
+                <img className='modal-image' src={image} alt={name}></img>
+            </div>
+
+            <div className="text-center" style={{padding:"20px"}}>
+                <h5 className='card-title'>{name}</h5>
+                <p className="text-muted mb-4">{brand}</p>
+            </div>
+
+            <div class="row justify-content-md-center" style={{textAlign:"center"}}>
+                
+                <div class="col col-lg-2">
+                <span class="h4 mb-0">
+                    <i class="fa-solid fa-ruler"></i>
+                </span>
+                <ul class="list-unstyled mb-0">
+                    <li aria-hidden="true">—</li>
+                  <li>{size}</li>
                 </ul>
+                </div>
+                
+                <div class="col col-lg-2">
+                <span class="h4 mb-0">
+                    <i class="fa-solid fa-money-bill"></i>
+                </span>
+                <ul class="list-unstyled mb-0">
+                    <li aria-hidden="true">—</li>
+                    <li>${price}</li>
+                </ul>
+                </div>
+
+            </div>
         </div>
         </div>,
         document.getElementById('portal')

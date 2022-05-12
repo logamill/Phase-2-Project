@@ -20,7 +20,7 @@
       "color": "Black",
       "price": 355,
       "size": "XS",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": 3,
@@ -42,7 +42,7 @@
       "color": "Silver",
       "price": 289,
       "size": "7",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "color": "Blue",
       "price": 40,
       "size": "XL",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "color": "White",
       "price": 100,
       "size": "7.5",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": 8,
@@ -140,7 +140,7 @@
       "color": "#ffac4d",
       "price": "135",
       "size": "XL",
-      "favorite": true,
+      "favorite": false,
       "id": 13
     },
     {
@@ -201,12 +201,12 @@
     {
       "category": "Bottoms",
       "name": "Loose Fit Double Knee Work Pant",
-      "image": "https://m.media-amazon.com/images/I/81XTtEdhYgL._AC_UY741_.jpg",
+      "image": "https://cdn.shopify.com/s/files/1/0736/4771/products/dickies-67-894-work-pants-dark-navy-WPSK94DN.jpg",
       "brand": "Dickies",
       "color": "#002d75",
       "price": "29.86",
       "size": "34",
-      "favorite": "false",
+      "favorite": false,
       "id": 19
     },
     {
@@ -283,7 +283,7 @@
       "color": "#57cdff",
       "price": "60.99",
       "size": "8",
-      "favorite": true,
+      "favorite": false,
       "id": 26
     },
     {
@@ -327,7 +327,7 @@
       "color": "#ffffff",
       "price": "79",
       "size": "18in",
-      "favorite": true,
+      "favorite": false,
       "id": 30
     },
     {
@@ -338,7 +338,7 @@
       "color": "#ccb838",
       "price": "266",
       "size": "7",
-      "favorite": true,
+      "favorite": false,
       "id": 31
     },
     {

@@ -20,13 +20,14 @@ function App() {
   const [clothes, setClothes] = useState([])
   const [searched, setSearched] = useState('')
   const [loading, setLoading] = useState(false)
+  const [updatePage, setUpdatePage] = useState(false)
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false)
     }, 2000)
-  },[clothes])
+  },[clothes, updatePage])
 
   // function to get initial fetch of data
   function getFetch() {
@@ -72,7 +73,7 @@ function App() {
           <Summer clothes={clothesToDisplay} setClothes={setClothes} />
         </Route>
         <Route exact path='/add'>
-          <ItemForm />
+          <ItemForm setUpdatePage={setUpdatePage}/>
         </Route>
         <Route exact path='/favorites' >
           <Favorites clothes={clothesToDisplay} search={searched} setClothes={setClothes} />
