@@ -107,7 +107,7 @@
       "color": "#bbb502",
       "price": "160",
       "size": "28",
-      "favorite": true,
+      "favorite": false,
       "id": 10
     },
     {
@@ -129,7 +129,7 @@
       "color": "#ffffff",
       "price": "185",
       "size": "34",
-      "favorite": true,
+      "favorite": false,
       "id": 12
     },
     {
@@ -140,7 +140,7 @@
       "color": "#ffac4d",
       "price": "135",
       "size": "XL",
-      "favorite": false,
+      "favorite": true,
       "id": 13
     },
     {
@@ -338,7 +338,7 @@
       "color": "#ccb838",
       "price": "266",
       "size": "7",
-      "favorite": true,
+      "favorite": false,
       "id": 31
     },
     {
@@ -360,7 +360,7 @@
       "color": "#2a9831",
       "price": "150.00",
       "size": "L",
-      "favorite": false,
+      "favorite": true,
       "id": 34
     },
     {
@@ -373,6 +373,94 @@
       "size": "L",
       "favorite": true,
       "id": 35
+    },
+    {
+      "category": "Bottoms",
+      "name": "Wax Effect Stretch Mini Skirt",
+      "image": "https://cdn-images.farfetch-contents.com/16/56/16/80/16561680_32291042_1000.jpg",
+      "brand": "Rick Owens DRKSHDW",
+      "color": "#4f4a4a",
+      "price": "447",
+      "size": "S",
+      "favorite": false,
+      "id": 36
+    },
+    {
+      "category": "Outerwear",
+      "name": "Abstract-Print Hooded Jacket",
+      "image": "https://cdn-images.farfetch-contents.com/17/83/12/27/17831227_39524032_1000.jpg",
+      "brand": "Heron Preston",
+      "color": "#cfc9c9",
+      "price": "1405",
+      "size": "M",
+      "favorite": false,
+      "id": 37
+    },
+    {
+      "category": "Tops",
+      "name": "Casablanca Silk Shirt",
+      "image": "https://cdn-images.farfetch-contents.com/17/60/84/09/17608409_39151583_1000.jpg",
+      "brand": "New Season",
+      "color": "#ffffff",
+      "price": "720",
+      "size": "M",
+      "favorite": false,
+      "id": 38
+    },
+    {
+      "category": "Tops",
+      "name": "Dinosaur Pattern Oversized Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0021/5629/8301/products/jpeg_551bfe8b-c4b8-413f-8f90-f8bf2e7f2fbb.jpg?v=1648708805",
+      "brand": "Aelfric Eden",
+      "color": "#ffffff",
+      "price": "39.95",
+      "size": "M",
+      "favorite": true,
+      "id": 39
+    },
+    {
+      "category": "Outerwear",
+      "name": "Various Embroidery Jacket",
+      "image": "https://cdn.shopify.com/s/files/1/0021/5629/8301/products/jpeg_b8afa43d-ef2d-4707-960f-409ce23759fc.jpg?v=1648805462",
+      "brand": "Aelfric Eden",
+      "color": "#ab8559",
+      "price": "119.95",
+      "size": "M",
+      "favorite": false,
+      "id": 40
+    },
+    {
+      "category": "Outerwear",
+      "name": "NY Deli Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0920/5284/products/ONLYNY_090721_NY_DELI_HOODIE_DARK_GREEN_0078_1_1024x1024.jpg?v=1631218292",
+      "brand": "OnlyNY",
+      "color": "#297536",
+      "price": "79",
+      "size": "L",
+      "favorite": false,
+      "id": 41
+    },
+    {
+      "category": "Outerwear",
+      "name": "Chilliwack Bomber",
+      "image": "https://cdn.shopify.com/s/files/1/0180/9761/products/CANADA-GOOSE-LADIES-CHILLIWACK-BLACK_600x600_crop_center.jpg?v=1557451644",
+      "brand": "Canada Goose",
+      "color": "#ffffff",
+      "price": "770",
+      "size": "S",
+      "favorite": false,
+      "id": 42
+    },
+    {
+      "category": "Outerwear",
+      "name": "Cowhide 50's Perfecto Motorcycle Jacket",
+      "image": "https://www.schottnyc.com/images/800x800/519_BLK_FNT_NEW1.jpg",
+      "brand": "Schott NYC",
+      "color": "#ffffff",
+      "price": "1015",
+      "size": "L",
+      "favorite": false,
+      "id": 43
     }
   ]
 }

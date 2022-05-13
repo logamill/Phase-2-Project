@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'
+import ItemFormImg from './ItemFormImg';
+
 
 function ItemForm({ setUpdatePage }) {
-    const [formData, setFormData] = useState({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: "false"})
+    const [formData, setFormData] = useState({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: false})
     let history = useHistory();
 
     function handleChange (e) {
@@ -25,7 +27,7 @@ function ItemForm({ setUpdatePage }) {
         .then (r => r.json())
         .then (data => setUpdatePage(data))
 
-        console.log('hi')
+        history.push(`/${formData.category}`)
 
         setFormData({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: false})
     }
@@ -34,24 +36,23 @@ function ItemForm({ setUpdatePage }) {
     height:"400px", width:"100%", padding: "20px"}
 
     return (
-    <div className='main'>
+        <>
+                <ItemFormImg />
         
-        <div
+    <div className='main'>
+        {/* <div
             className="p-5 text-center bg-image"
             style={backgroundStyle}
-        >
+        > */}
 
             <div className="d-flex justify-content-center align-items-center h-100">
             
                 <div className="text-white">
                 
-                    <h1 className='mb-3' style={{fontSize: "60px", textShadow: "3px  3px 5px #777" }}>Add New Item</h1>
+                    {/* <h1 className='mb-3' style={{fontSize: "60px", textShadow: "3px  3px 5px #777" }}>Add New Item</h1> */}
             
-                    <h4 className="mb-3" style={{fontSize: "30px", textShadow: "3px  3px 5px #777"}}>Bring your trend!</h4>
-
                 </div>
-            </div>
-
+            {/* </div> */}
         </div>
 
 
@@ -163,6 +164,7 @@ function ItemForm({ setUpdatePage }) {
 
 
     </div>
+    </>
     )
 }
 
