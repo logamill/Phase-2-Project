@@ -461,6 +461,72 @@
       "size": "L",
       "favorite": false,
       "id": 43
+    },
+    {
+      "category": "Bottoms",
+      "name": "Rainbow Belt Print Pants",
+      "image": "https://cdn.shopify.com/s/files/1/0021/5629/8301/products/jpeg_b17b775e-da84-4594-9b38-1c47d196b643.jpg?v=1652264702",
+      "brand": "Aelfric Eden",
+      "color": "#ffffff",
+      "price": "80",
+      "size": "S",
+      "favorite": false,
+      "id": 44
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Pigeon Hat",
+      "image": "https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Staple-Prospect-Snapback-Hat-_223958-front.jpg",
+      "brand": "Staple",
+      "color": "#ffffff",
+      "price": "39.99",
+      "size": "M",
+      "favorite": false,
+      "id": 45
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Polka AF1",
+      "image": "https://images.stockx.com/images/Nike-Air-Force-1-Low-fragment-Polka-Dot.png?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1618257436",
+      "brand": "Nike",
+      "color": "#ffffff",
+      "price": "125",
+      "size": "L",
+      "favorite": false,
+      "id": 46
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Oiled Italian Leather Belt",
+      "image": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/423838/item/goods_37_423838.jpg?width=750",
+      "brand": "Uniqlo",
+      "color": "#ffffff",
+      "price": "34.95",
+      "size": "M",
+      "favorite": false,
+      "id": 47
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "Panzer-10 Rucksack",
+      "image": "http://www.bondinternational.com/image/cache/data/mishka-panzerbpack-gry-600x600.jpg",
+      "brand": "Мишка",
+      "color": "#ffffff",
+      "price": "75",
+      "size": "",
+      "favorite": true,
+      "id": 48
+    },
+    {
+      "category": "Outerwear",
+      "name": "2 High 2 Dye Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0024/2932/1285/products/Frame3.png?v=1651247365",
+      "brand": "Мишка",
+      "color": "#ffffff",
+      "price": "69.99",
+      "size": "L",
+      "favorite": false,
+      "id": 49
     }
   ]
 }

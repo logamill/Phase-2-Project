@@ -27,7 +27,9 @@ function ItemForm({ setUpdatePage }) {
         .then (r => r.json())
         .then (data => setUpdatePage(data))
 
-        history.push(`/${formData.category}`)
+        const redirectURL = formData.category.toLowerCase().includes('accessor') ? `accessories` : `${formData.category}`
+
+        history.push(`/${redirectURL}`)
 
         setFormData({category: "Tops", name: "", image: "", brand: "", color: "#ffffff", price: "", size: "", favorite: false})
     }
