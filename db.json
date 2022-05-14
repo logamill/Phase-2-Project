@@ -294,7 +294,7 @@
       "color": "#ff0000",
       "price": "459",
       "size": "6",
-      "favorite": false,
+      "favorite": true,
       "id": 27
     },
     {
@@ -316,7 +316,7 @@
       "color": "#9c9c9c",
       "price": "145.00",
       "size": "22in",
-      "favorite": true,
+      "favorite": false,
       "id": 29
     },
     {
@@ -518,13 +518,13 @@
       "id": 48
     },
     {
-      "category": "Outerwear",
-      "name": "2 High 2 Dye Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0024/2932/1285/products/Frame3.png?v=1651247365",
-      "brand": "Мишка",
+      "category": "Tops",
+      "name": "Apple",
+      "image": "https://www.rover.com/blog/wp-content/uploads/2019/06/iStock-1124551251-min-960x540.jpg",
+      "brand": "Uniqlo",
       "color": "#ffffff",
-      "price": "69.99",
-      "size": "L",
+      "price": "25",
+      "size": "M",
       "favorite": false,
       "id": 49
     }

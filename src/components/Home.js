@@ -10,7 +10,7 @@ import ImageThreeDesc from './ImageThreeDesc';
 
 function Home({ clothes, setClothes }) {
 
-    const latestItems = (clothes.length -9)
+    const latestItems = (clothes.length -7)
 
     const newAdditions = clothes.filter((item) => 
         item.id > latestItems ? true : false)
