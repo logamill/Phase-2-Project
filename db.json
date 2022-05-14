@@ -516,17 +516,6 @@
       "size": "",
       "favorite": true,
       "id": 48
-    },
-    {
-      "category": "Tops",
-      "name": "Apple",
-      "image": "https://www.rover.com/blog/wp-content/uploads/2019/06/iStock-1124551251-min-960x540.jpg",
-      "brand": "Uniqlo",
-      "color": "#ffffff",
-      "price": "25",
-      "size": "M",
-      "favorite": false,
-      "id": 49
     }
   ]
 }

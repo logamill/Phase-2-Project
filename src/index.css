@@ -206,8 +206,8 @@ code {
   align-items: center;
   justify-content: center;
   position: absolute;
-  height: 34vh;
-  width: 95%;
+  height: 90vh;
+  width: 100%;
 }
 
 .content {
@@ -225,7 +225,7 @@ code {
   justify-content: center;
   position: absolute;
   height: 90vh;
-  width: 97%;
+  width: 100%;
 }
 
 .content-load span.img-txt {
