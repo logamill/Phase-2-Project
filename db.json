@@ -283,7 +283,7 @@
       "color": "#57cdff",
       "price": "60.99",
       "size": "8",
-      "favorite": true,
+      "favorite": false,
       "id": 26
     },
     {
@@ -305,7 +305,7 @@
       "color": "#29a2ff",
       "price": "1892",
       "size": "9",
-      "favorite": true,
+      "favorite": false,
       "id": 28
     },
     {
@@ -322,7 +322,7 @@
     {
       "category": "Accessories & Shoes",
       "name": "Skyline Pendant",
-      "image": "https://jaxxon.com/static/216c8a01b6292f3bf6100606176f4a49/62c39/SPSkylineSilver.webp",
+      "image": "https://jaxxon.com/static/4455fad65f31dc22c4df024801d1a01d/16db6/SkylineSVPendantOnly1_8b39d26f-8893-4d57-a03c-4be81b7618f4.jpg",
       "brand": "JAXXON",
       "color": "#ffffff",
       "price": "79",
@@ -409,13 +409,13 @@
     },
     {
       "category": "Tops",
-      "name": "Dinosaur Pattern Oversized Tee",
-      "image": "https://cdn.shopify.com/s/files/1/0021/5629/8301/products/jpeg_551bfe8b-c4b8-413f-8f90-f8bf2e7f2fbb.jpg?v=1648708805",
+      "name": "Dinosaur Pattern Oversized",
+      "image": "https://cdn.shopify.com/s/files/1/0021/5629/8301/products/1_e5c133f1-3ad7-4b7f-b3ef-f3f6028b5364.jpg?v=1654069599",
       "brand": "Aelfric Eden",
       "color": "#ffffff",
       "price": "39.95",
       "size": "M",
-      "favorite": true,
+      "favorite": false,
       "id": 39
     },
     {
@@ -465,7 +465,7 @@
     {
       "category": "Bottoms",
       "name": "Rainbow Belt Print Pants",
-      "image": "https://cdn.shopify.com/s/files/1/0021/5629/8301/products/jpeg_b17b775e-da84-4594-9b38-1c47d196b643.jpg?v=1652264702",
+      "image": "https://cdn.shopify.com/s/files/1/0021/5629/8301/products/1_704af428-146f-4161-99e0-d1b24cfe2955.jpg?v=1653031382",
       "brand": "Aelfric Eden",
       "color": "#ffffff",
       "price": "80",
@@ -492,7 +492,7 @@
       "color": "#ffffff",
       "price": "125",
       "size": "L",
-      "favorite": false,
+      "favorite": true,
       "id": 46
     },
     {
@@ -516,6 +516,17 @@
       "size": "",
       "favorite": true,
       "id": 48
+    },
+    {
+      "category": "Accessories & Shoes",
+      "name": "BIlly",
+      "image": "https://www.rover.com/blog/wp-content/uploads/2019/06/iStock-1124551251-min-960x540.jpg",
+      "brand": "Dog",
+      "color": "#cdac32",
+      "price": "9000",
+      "size": "L",
+      "favorite": true,
+      "id": 49
     }
   ]
 }
