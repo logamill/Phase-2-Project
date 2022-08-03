@@ -75,7 +75,7 @@
       "color": "White",
       "price": 100,
       "size": "7.5",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": 8,
@@ -239,7 +239,7 @@
       "color": "#000000",
       "price": "24.95",
       "size": "S",
-      "favorite": false,
+      "favorite": true,
       "id": 22
     },
     {
@@ -283,7 +283,7 @@
       "color": "#57cdff",
       "price": "60.99",
       "size": "8",
-      "favorite": false,
+      "favorite": true,
       "id": 26
     },
     {
@@ -516,17 +516,6 @@
       "size": "",
       "favorite": true,
       "id": 48
-    },
-    {
-      "category": "Accessories & Shoes",
-      "name": "BIlly",
-      "image": "https://www.rover.com/blog/wp-content/uploads/2019/06/iStock-1124551251-min-960x540.jpg",
-      "brand": "Dog",
-      "color": "#cdac32",
-      "price": "9000",
-      "size": "L",
-      "favorite": true,
-      "id": 49
     }
   ]
 }
